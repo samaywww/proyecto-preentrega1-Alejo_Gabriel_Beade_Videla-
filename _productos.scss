@@ -1,0 +1,26 @@
+ // TARJETA PRODUCTO
+ .tarjeta-producto {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .precio-producto, .envio-producto {
+    font-family: "Bebas Neue", sans-serif;
+  }
+  
+  .precio-producto {
+    font-size: 22px;
+    color: #00a650;
+    margin: 5px 0;
+  }
+  
+  .envio-producto {
+    font-size: 14px;
+    color: #00a650;
+    margin-bottom: 10px;
+  }
+  

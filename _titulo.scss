@@ -1,0 +1,10 @@
+// TITULO
+.TITULO {
+    font-size: 3rem;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: aparecer 1s ease-out forwards;
+    font-family: "Bebas Neue", sans-serif;
+  }
+  

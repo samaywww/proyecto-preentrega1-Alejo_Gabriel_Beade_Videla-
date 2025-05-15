@@ -1,217 +1,15 @@
-* {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  box-sizing: border-box;
+@keyframes aparecer {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
-
-body {
-  background-image: url("img/moroccan-flower.png");
-  background-repeat: repeat;
-}
-
-footer {
-  background-color: #f8f8f8;
-  padding: 20px;
-  text-align: center;
-  font-family: "Bebas Neue", sans-serif;
-  font-size: 14px;
-  color: #333;
-}
-
-.button-base, .btn {
-  font-family: "Bebas Neue", sans-serif;
-  font-size: 20px;
-  display: inline-block;
-  padding: 10px 20px;
-  border-radius: 5px;
-  color: #000;
-  background-color: transparent;
-  transition: background-color 0.3s;
-}
-.button-base:hover, .btn:hover {
-  transform: scale(1.05);
-  background-color: rgba(0, 0, 0, 0);
-}
-
-.boton-comprar {
-  font-family: "Bebas Neue", sans-serif;
-  font-size: 20px;
-  display: inline-block;
-  padding: 10px 20px;
-  border-radius: 5px;
-  color: white;
-  background-color: #3483fa;
-  transition: background-color 0.3s;
-}
-.boton-comprar:hover {
-  transform: scale(1.05);
-  background-color: rgb(6.0336538462, 101.3653846154, 244.9663461538);
-}
-
-.btn {
-  margin-left: 15px;
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 30px;
-}
-.navbar-center {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-
-.nav {
-  display: flex;
-  justify-content: center;
-}
-.nav-item {
-  margin: 0 15px;
-}
-.nav-link {
-  text-decoration: none;
-}
-
-.logo {
-  font-family: "Bebas Neue", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  text-decoration: none;
-  color: #333;
-}
-
-.TITULO {
-  font-size: 3rem;
-  text-align: center;
-  opacity: 0;
-  transform: translateY(-20px);
-  animation: aparecer 1s ease-out forwards;
-  font-family: "Bebas Neue", sans-serif;
-}
-
-.seccion-productos h1 {
-  text-align: center;
-  font-size: 18px;
-  color: #000;
-  margin-top: 10px;
-}
-.seccion-productos ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-.seccion-productos li {
-  margin: 20px;
-}
-.seccion-productos li img {
-  width: 100%;
-  object-fit: cover;
-  border-radius: 10px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 250px;
-  height: 250px;
-}
-.seccion-productos li img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-.seccion-productos p {
-  background-color: #f8f8f8;
-  border-style: groove;
-  border-color: #000;
-  text-align: center;
-  font-size: 18px;
-  font-family: "Cal Sans", sans-serif;
-  margin-top: 10px;
-}
-
-.tarjeta-producto {
-  background-color: #fff;
-  padding: 15px;
-  border-radius: 10px;
-  width: 600px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
-
-.precio-producto, .envio-producto {
-  font-family: "Bebas Neue", sans-serif;
-}
-
-.precio-producto {
-  font-size: 22px;
-  color: #00a650;
-  margin: 5px 0;
-}
-
-.envio-producto {
-  font-size: 14px;
-  color: #00a650;
-  margin-bottom: 10px;
-}
-
 img {
   width: 100%;
   max-width: 300px;
   height: auto;
 }
 
-.carrusel-productos {
-  overflow-x: auto;
-  overflow-y: hidden;
-  white-space: nowrap;
-  padding: 20px;
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
-}
-.carrusel-productos .producto {
-  flex: 0 0 auto;
-  width: 200px;
-  scroll-snap-align: start;
-  text-align: center;
-  background-color: white;
-  border-radius: 10px;
-  padding: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  margin: 10px;
-}
-.carrusel-productos .producto img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  border-radius: 8px;
-}
-
-@media (max-width: 768px) {
-  .carrusel-productos {
-    padding: 10px;
-  }
-  .producto {
-    width: 150px;
-    margin: 5px;
-  }
-  .producto img {
-    height: 150px;
-  }
-}
-@media (max-width: 480px) {
-  .carrusel-productos {
-    padding: 5px;
-  }
-  .producto {
-    width: 120px;
-    margin: 5px;
-  }
-  .producto img {
-    height: 120px;
-  }
-}
 #menu-toggle {
   display: none;
 }
@@ -229,12 +27,6 @@ img {
   gap: 20px;
 }
 
-@keyframes aparecer {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 @media (max-width: 768px) {
   .menu-icon {
     display: block;
@@ -292,6 +84,217 @@ img {
   .producto img {
     height: 150px;
   }
+}
+@media (max-width: 768px) {
+  .carrusel-productos {
+    padding: 10px;
+  }
+}
+.producto {
+  width: 150px;
+  margin: 5px;
+}
+
+.producto img {
+  height: 150px;
+}
+
+@media (max-width: 480px) {
+  .carrusel-productos {
+    padding: 5px;
+  }
+}
+.producto {
+  width: 120px;
+  margin: 5px;
+}
+.producto .producto img {
+  height: 120px;
+}
+
+.button-base, .btn {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 20px;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #000;
+  background-color: transparent;
+  transition: background-color 0.3s;
+}
+.button-base:hover, .btn:hover {
+  transform: scale(1.05);
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.boton-comprar {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 20px;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+  background-color: #3483fa;
+  transition: background-color 0.3s;
+}
+.boton-comprar:hover {
+  transform: scale(1.05);
+  background-color: rgb(6.0336538462, 101.3653846154, 244.9663461538);
+}
+
+.btn {
+  margin-left: 15px;
+}
+
+.seccion-productos img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 250px;
+  height: 250px;
+}
+.seccion-productos img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+}
+.navbar-center {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+}
+.nav-item {
+  margin: 0 15px;
+}
+.nav-link {
+  text-decoration: none;
+}
+
+.logo {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  color: #333;
+}
+
+.tarjeta-producto {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  width: 600px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.precio-producto, .envio-producto {
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.precio-producto {
+  font-size: 22px;
+  color: #00a650;
+  margin: 5px 0;
+}
+
+.envio-producto {
+  font-size: 14px;
+  color: #00a650;
+  margin-bottom: 10px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("img/moroccan-flower.png");
+  background-repeat: repeat;
+}
+
+footer {
+  background-color: #f8f8f8;
+  padding: 20px;
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 14px;
+  color: #333;
+}
+
+.seccion-productos h1 {
+  text-align: center;
+  font-size: 18px;
+  color: #000;
+  margin-top: 10px;
+}
+.seccion-productos ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.seccion-productos li {
+  margin: 20px;
+}
+.seccion-productos p {
+  background-color: #f8f8f8;
+  border-style: groove;
+  border-color: #000;
+  text-align: center;
+  font-size: 18px;
+  font-family: "Cal Sans", sans-serif;
+  margin-top: 10px;
+}
+
+.carrusel-productos {
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  padding: 20px;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+.carrusel-productos .producto {
+  flex: 0 0 auto;
+  width: 200px;
+  scroll-snap-align: start;
+  text-align: center;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+}
+.carrusel-productos .producto img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.TITULO {
+  font-size: 3rem;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: aparecer 1s ease-out forwards;
+  font-family: "Bebas Neue", sans-serif;
 }
 
 /*# sourceMappingURL=style.css.map */
