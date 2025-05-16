@@ -28,38 +28,31 @@
         crossorigin="anonymous"></script>
 
     <header class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <div class="navbar-left">
-                <a class="logo">Good's Clothes</a>
-            </div>
+  <div class="container-fluid">
+    <a class="logo">Good's Clothes</a>
 
-            <input type="checkbox" id="menu-toggle">
-            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+    <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
 
-            <nav class="navbar-center mx-auto menu ">
-                <ul class="nav nav-underline">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" href="#" role="button"
-                            aria-expanded="false">
-                            PRODUCTO
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="pages/pantalones.html">Pantalones</a></li>
-                            <li><a class="dropdown-item" href="pages/medias.html">Medias</a></li>
-                            <li><a class="dropdown-item" href="pages/remeras.html">Remeras</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a class="nav-link active" aria-current="page" href="pages/producto-descuentos.html">PRODUCTOS
-                            EN DESCUENTO</a>
-                    </li>
-                    <li>
-                        <a class="nav-link active" aria-current="page" href="pages/contacto.html">CONOCENOS</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <!-- 🔥 Este NAV debe estar justo después del LABEL -->
+    <nav class="menu">
+      <ul class="nav nav-underline">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+            PRODUCTO
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="pages/pantalones.html">Pantalones</a></li>
+            <li><a class="dropdown-item" href="pages/medias.html">Medias</a></li>
+            <li><a class="dropdown-item" href="pages/remeras.html">Remeras</a></li>
+          </ul>
+        </li>
+        <li><a class="nav-link active" href="pages/producto-descuentos.html">PRODUCTOS EN DESCUENTO</a></li>
+        <li><a class="nav-link active" href="pages/contacto.html">CONOCENOS</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
     <br>
     <h1 class="TITULO">encuentra la ropa mas fachera aquí</h1>
